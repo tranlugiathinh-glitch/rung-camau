@@ -130,7 +130,7 @@ nav a:hover{
     <source src="nhacnen.mp3" type="audio/mpeg">
 </audio>
 
-<button onclick="toggleMusic()" 
+<button id="musicBtn"
         style="position:fixed;
                top:20px;
                right:20px;
@@ -145,10 +145,10 @@ nav a:hover{
 </button>
 
 <script>
-function toggleMusic() {
-    var music = document.getElementById("bgMusic");
-    var btn = event.target;
+var music = document.getElementById("bgMusic");
+var btn = document.getElementById("musicBtn");
 
+btn.addEventListener("click", function() {
     if (music.paused) {
         music.play();
         btn.innerHTML = "🔇 Tắt nhạc";
@@ -156,7 +156,7 @@ function toggleMusic() {
         music.pause();
         btn.innerHTML = "🔊 Bật nhạc";
     }
-}
+});
 </script>
   
 
@@ -203,6 +203,7 @@ function toggleMusic() {
 
 </body>
 </html>
+
 
 
 
