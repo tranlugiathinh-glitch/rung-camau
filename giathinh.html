@@ -26,9 +26,27 @@ body{
 h1{
     text-align:center;
     color:#00ff88;
-    margin-bottom:40px;
+    margin-bottom:20px;
 }
 
+/* ẢNH TRÒN */
+.avatar{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    overflow:hidden;
+    margin:0 auto 40px auto;
+    box-shadow:0 0 30px rgba(0,255,136,0.6);
+    border:4px solid #00ff88;
+}
+
+.avatar img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+/* FORM */
 .form-group{
     margin-bottom:20px;
 }
@@ -60,7 +78,6 @@ textarea{
     font-weight:normal;
 }
 
-/* Chia phần thể thao + ảnh thành 2 cột */
 .sport-section{
     display:flex;
     gap:50px;
@@ -69,20 +86,6 @@ textarea{
 
 .checkbox-group{
     flex:1;
-}
-
-.photo-box{
-    width:260px;
-    height:320px;
-    border-radius:20px;
-    overflow:hidden;
-    box-shadow:0 0 25px rgba(0,255,136,0.4);
-}
-
-.photo-box img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
 }
 
 .back-btn{
@@ -107,6 +110,11 @@ textarea{
 <div class="container">
 
 <h1>TÂM SỰ ĐÔI DÒNG VỀ BẢN THÂN</h1>
+
+<!-- ẢNH TRÒN Ở ĐÂY -->
+<div class="avatar">
+    <img src="anhgiathinh.png" alt="Ảnh Gia Thịnh">
+</div>
 
 <div class="form-group">
 <label>Họ tên thành viên:</label>
@@ -133,9 +141,6 @@ textarea{
 
 <div class="form-group">
 <label>Môn thể thao yêu thích:</label>
-
-<div class="sport-section">
-
 <div class="checkbox-group">
 <label><input type="checkbox"> Bóng đá</label>
 <label><input type="checkbox"> Cầu lông</label>
@@ -143,12 +148,6 @@ textarea{
 <label><input type="checkbox"> Ca hát</label>
 <label><input type="checkbox"> Nhảy - Múa</label>
 <label><input type="checkbox"> Khác</label>
-</div>
-
-<div class="photo-box">
-    <img src="anhgiathinh.png" alt="Ảnh Gia Thịnh">
-</div>
-
 </div>
 </div>
 
