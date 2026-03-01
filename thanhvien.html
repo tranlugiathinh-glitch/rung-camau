@@ -5,6 +5,18 @@
 <title>Danh sách thành viên</title>
 
 <style>
+.video-box{
+    margin-top:30px;
+    display:flex;
+    justify-content:center;
+}
+
+.video-box video{
+    width:800px;
+    max-width:90%;
+    border-radius:20px;
+    box-shadow:0 0 25px rgba(0,255,136,0.4);
+}
 *{
     margin:0;
     padding:0;
@@ -12,7 +24,6 @@
     font-family:Arial;
 }
 
-/* NAVBAR */
 .navbar{
     position:fixed;
     top:0;
@@ -116,9 +127,20 @@ h1{
 <div class="member"><a href="tv5.html">Thành viên 5</a></div>
 <div class="member"><a href="tv6.html">Thành viên 6</a></div>
 
+    <h2 style="margin-top:80px;color:#00ff88;text-align:center;">
+🎥 Video nhóm
+</h2>
+
+<div class="video-box">
+    <video autoplay muted loop playsinline>
+        <source src="videonhom8.mp4" type="video/mp4">
+        Trình duyệt không hỗ trợ video.
+    </video>
+</div>
 </div>
 
 </div>
 
 </body>
 </html>
+
