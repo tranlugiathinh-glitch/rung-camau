@@ -19,7 +19,7 @@ body{
 }
 
 .container{
-    max-width:1100px;
+    max-width:900px;
     margin:auto;
 }
 
@@ -27,38 +27,6 @@ h1{
     text-align:center;
     color:#00ff88;
     margin-bottom:40px;
-}
-
-.form-wrapper{
-    display:flex;
-    gap:50px;
-    align-items:flex-start;
-}
-
-.left-form{
-    flex:2;
-}
-
-.right-photo{
-    flex:1;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-}
-
-.photo-box{
-    width:260px;
-    height:320px;
-    border-radius:20px;
-    overflow:hidden;
-    box-shadow:0 0 25px rgba(0,255,136,0.4);
-    margin-bottom:20px;
-}
-
-.photo-box img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
 }
 
 .form-group{
@@ -92,6 +60,22 @@ textarea{
     font-weight:normal;
 }
 
+/* Ảnh */
+.photo-box{
+    margin-top:20px;
+    width:260px;
+    height:320px;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 0 25px rgba(0,255,136,0.4);
+}
+
+.photo-box img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
 .back-btn{
     display:inline-block;
     margin-top:30px;
@@ -114,10 +98,6 @@ textarea{
 <div class="container">
 
 <h1>TÂM SỰ ĐÔI DÒNG VỀ BẢN THÂN</h1>
-
-<div class="form-wrapper">
-
-<div class="left-form">
 
 <div class="form-group">
 <label>Họ tên thành viên:</label>
@@ -152,6 +132,12 @@ textarea{
 <label><input type="checkbox"> Nhảy - Múa</label>
 <label><input type="checkbox"> Khác</label>
 </div>
+
+<!-- Ảnh đặt ngay dưới mục này -->
+<div class="photo-box">
+    <img src="anhgiathinh.png" alt="Ảnh Gia Thịnh">
+</div>
+
 </div>
 
 <div class="form-group">
@@ -165,18 +151,6 @@ textarea{
 </div>
 
 <a href="thanhvien.html" class="back-btn">← Quay lại</a>
-
-</div>
-
-<div class="right-photo">
-
-<div class="photo-box">
-    <img src="anhgiathinh.png" alt="Ảnh Gia Thịnh">
-</div>
-
-</div>
-
-</div>
 
 </div>
 
