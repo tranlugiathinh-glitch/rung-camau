@@ -13,24 +13,52 @@
 }
 
 body{
-    background:#0f1f14;
+    background:linear-gradient(to right,#0f1f14,#1c3a28);
     color:white;
     padding:40px;
 }
 
 .container{
-    max-width:900px;
+    max-width:1100px;
     margin:auto;
-    background:#1c3a28;
-    padding:40px;
-    border-radius:20px;
-    box-shadow:0 0 30px rgba(0,255,136,0.3);
 }
 
 h1{
     text-align:center;
     color:#00ff88;
-    margin-bottom:30px;
+    margin-bottom:40px;
+}
+
+.form-wrapper{
+    display:flex;
+    gap:50px;
+    align-items:flex-start;
+}
+
+.left-form{
+    flex:2;
+}
+
+.right-photo{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.photo-box{
+    width:260px;
+    height:320px;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 0 25px rgba(0,255,136,0.4);
+    margin-bottom:20px;
+}
+
+.photo-box img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
 }
 
 .form-group{
@@ -44,43 +72,37 @@ label{
 }
 
 input[type="text"],
-input[type="date"]{
+input[type="date"],
+textarea{
     width:100%;
     padding:10px;
-    border-radius:8px;
     border:none;
+    border-radius:8px;
     outline:none;
 }
 
-.radio-group,
-.checkbox-group{
-    margin-top:5px;
+textarea{
+    resize:none;
 }
 
-.radio-group label,
-.checkbox-group label{
+.checkbox-group label,
+.radio-group label{
     display:block;
     margin-bottom:5px;
     font-weight:normal;
 }
 
-textarea{
-    width:100%;
-    padding:10px;
-    border-radius:8px;
-    border:none;
-}
-
 .back-btn{
     display:inline-block;
-    margin-top:20px;
-    padding:10px 20px;
+    margin-top:30px;
+    padding:10px 25px;
     background:#00ff88;
     color:black;
     text-decoration:none;
     border-radius:10px;
     font-weight:bold;
 }
+
 .back-btn:hover{
     opacity:0.8;
 }
@@ -93,11 +115,13 @@ textarea{
 
 <h1>TÂM SỰ ĐÔI DÒNG VỀ BẢN THÂN</h1>
 
-<form>
+<div class="form-wrapper">
+
+<div class="left-form">
 
 <div class="form-group">
 <label>Họ tên thành viên:</label>
-<input type="text">
+<input type="text" value="Trần Lư Gia Thịnh">
 </div>
 
 <div class="form-group">
@@ -108,7 +132,7 @@ textarea{
 <div class="form-group">
 <label>Giới tính:</label>
 <div class="radio-group">
-<label><input type="radio" name="gender"> Nam</label>
+<label><input type="radio" name="gender" checked> Nam</label>
 <label><input type="radio" name="gender"> Nữ</label>
 </div>
 </div>
@@ -140,9 +164,19 @@ textarea{
 <textarea rows="3"></textarea>
 </div>
 
-</form>
-
 <a href="thanhvien.html" class="back-btn">← Quay lại</a>
+
+</div>
+
+<div class="right-photo">
+
+<div class="photo-box">
+    <img src="anhgiathinh.png" alt="Ảnh Gia Thịnh">
+</div>
+
+</div>
+
+</div>
 
 </div>
 
