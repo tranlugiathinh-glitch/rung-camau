@@ -2,134 +2,181 @@
 <html lang="vi">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>5 Khu Rừng Cà Mau</title>
 
 <style>
-body{
+*{
     margin:0;
-    font-family:Arial, sans-serif;
-    background: linear-gradient(to bottom, #0f3d1f, #145c2c);
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background: url("anh-rung-ca-mau.png") no-repeat center center/cover;
+    background-attachment: fixed;
     color:white;
 }
 
-header{
-    background:#0b2f17;
-    padding:30px 0;
-    text-align:center;
+/* Lớp phủ tối */
+.overlay{
+    background: rgba(0,0,0,0.6);
+    min-height:100vh;
+    padding:60px 20px;
 }
 
-header h1{
-    font-size:42px;
+/* Tiêu đề */
+h1{
+    text-align:center;
+    font-size:50px;
+    margin-bottom:20px;
+    animation: fadeDown 1.5s ease;
+}
+
+.subtitle{
+    text-align:center;
+    font-size:20px;
+    margin-bottom:60px;
+    color:#d4ffd4;
+}
+
+/* Card container */
+.container{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+/* Card */
+.card{
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    padding:25px;
+    border-radius:20px;
+    transition:0.4s;
+    position:relative;
+    overflow:hidden;
+    transform:translateY(50px);
+    opacity:0;
+    animation: fadeUp 1s forwards;
+}
+
+.card:nth-child(1){ animation-delay:0.3s;}
+.card:nth-child(2){ animation-delay:0.6s;}
+.card:nth-child(3){ animation-delay:0.9s;}
+.card:nth-child(4){ animation-delay:1.2s;}
+.card:nth-child(5){ animation-delay:1.5s;}
+
+.card:hover{
+    transform: scale(1.05) rotateX(5deg);
+    box-shadow:0 0 30px #00ff88;
+}
+
+.card h2{
+    margin-bottom:10px;
+    color:#00ff88;
+}
+
+.card p{
+    font-size:15px;
+    line-height:1.5;
     margin-bottom:15px;
 }
 
-nav a{
-    text-decoration:none;
-    color:white;
-    margin:0 20px;
+.card button{
+    padding:8px 15px;
+    border:none;
+    border-radius:20px;
+    background:#00ff88;
+    cursor:pointer;
     font-weight:bold;
     transition:0.3s;
 }
 
-nav a:hover{
-    color:#4caf50;
+.card button:hover{
+    background:white;
 }
 
-.content{
-    padding:60px 8%;
-}
-
-.card{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    background: rgba(0,0,0,0.45);
-    padding:35px;
-    margin-bottom:40px;
-    border-radius:25px;
-}
-
-.card-text{
-    width:60%;
-}
-
-.card img{
-    width:280px;
-    height:170px;
-    object-fit:cover;
-    border-radius:20px;
-    border:5px solid #ffc107;
-}
-
-footer{
-    background:#081f10;
+/* Nút quay lại */
+.footer-btn{
     text-align:center;
-    padding:20px;
-    margin-top:40px;
+    margin-top:60px;
 }
-</style>
 
+.footer-btn a{
+    text-decoration:none;
+    padding:12px 25px;
+    border-radius:30px;
+    background:#00ff88;
+    color:black;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.footer-btn a:hover{
+    background:white;
+}
+
+/* Animations */
+@keyframes fadeDown{
+    from{opacity:0; transform:translateY(-50px);}
+    to{opacity:1; transform:translateY(0);}
+}
+
+@keyframes fadeUp{
+    to{opacity:1; transform:translateY(0);}
+}
+
+</style>
 </head>
+
 <body>
 
-<header>
-<h1>5 Khu Rừng Nổi Tiếng Ở Cà Mau</h1>
+<div class="overlay">
 
-<nav>
-    <a href="index.html">Trang Chủ</a>
-    <a href="rung.html">5 khu rừng</a>  
-    <a href="thanhvien.html">Thành Viên</a>  
-</nav>
-</header>
+<h1>🌳 5 Khu Rừng Tiêu Biểu Cà Mau</h1>
+<div class="subtitle">Hệ sinh thái đặc trưng vùng đất cực Nam Tổ Quốc</div>
 
-<section class="content">
+<div class="container">
 
 <div class="card">
-    <div class="card-text">
-        <h3>1. Vườn quốc gia U Minh Hạ</h3>
-        <p>Rừng tràm đặc trưng với hệ sinh thái ngập nước độc đáo.</p>
-    </div>
-    <img src="uminhha.jpg">
+    <h2>Vườn quốc gia U Minh Hạ</h2>
+    <p>Hệ sinh thái rừng tràm trên đất than bùn, đa dạng sinh học cao và có giá trị nghiên cứu lớn.</p>
+    <button>Xem chi tiết</button>
 </div>
 
 <div class="card">
-    <div class="card-text">
-        <h3>2. Vườn quốc gia Mũi Cà Mau</h3>
-        <p>Khu rừng ngập mặn thuộc khu dự trữ sinh quyển thế giới.</p>
-    </div>
-    <img src="muicamau.jpg">
+    <h2>Vườn quốc gia Mũi Cà Mau</h2>
+    <p>Khu dự trữ sinh quyển thế giới với hệ sinh thái rừng ngập mặn đặc trưng.</p>
+    <button>Xem chi tiết</button>
 </div>
 
 <div class="card">
-    <div class="card-text">
-        <h3>3. Khu sinh thái rừng đước Năm Căn</h3>
-        <p>Hệ thống rừng đước ven biển rộng lớn.</p>
-    </div>
-    <img src="ngochien.jpg">
+    <h2>Khu sinh thái rừng đước Năm Căn</h2>
+    <p>Rừng đước ven biển rộng lớn, đóng vai trò quan trọng trong bảo vệ bờ biển.</p>
+    <button>Xem chi tiết</button>
 </div>
 
 <div class="card">
-    <div class="card-text">
-        <h3>4. Rừng phòng hộ Kiến Vàng</h3>
-        <p>Kết hợp giữa rừng và đầm nước mặn sinh thái đặc biệt.</p>
-    </div>
-    <img src="damthituong.jpg">
+    <h2>Rừng phòng hộ Kiến Vàng</h2>
+    <p>Rừng phòng hộ giúp chống xói lở và bảo vệ môi trường sinh thái địa phương.</p>
+    <button>Xem chi tiết</button>
 </div>
 
 <div class="card">
-    <div class="card-text">
-        <h3>5. Rừng ngập mặn Đầm Dơi</h3>
-        <p>Góp phần bảo vệ bờ biển và cân bằng môi trường.</p>
-    </div>
-    <img src="phongdien.jpg">
+    <h2>Rừng ngập mặn Đầm Dơi</h2>
+    <p>Hệ sinh thái ngập mặn đa dạng với nhiều loài động thực vật quý hiếm.</p>
+    <button>Xem chi tiết</button>
 </div>
 
-</section>
+</div>
 
-<footer>
-<p>Nhóm 8 - 12A3</p>
-</footer>
+<div class="footer-btn">
+    <a href="index.html">⬅ Quay về Trang chủ</a>
+</div>
+
+</div>
 
 </body>
-
 </html>
