@@ -5,12 +5,7 @@
 <title>Tâm sự đôi dòng</title>
 
 <style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial;
-}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial;}
 
 body{
     background:linear-gradient(to right,#0f1f14,#1c3a28);
@@ -19,7 +14,7 @@ body{
 }
 
 .container{
-    max-width:1000px;
+    max-width:700px;
     margin:auto;
 }
 
@@ -46,65 +41,60 @@ h1{
 }
 
 .form-group{
-    margin-bottom:20px;
+    display:flex;
+    align-items:center;
+    margin-bottom:15px;
 }
 
-label{
-    display:block;
-    margin-bottom:8px;
+.form-group label{
+    width:180px;
     font-weight:bold;
 }
 
 input[type="text"],
 input[type="date"],
 textarea{
-    width:100%;
-    padding:10px;
+    flex:1;
+    padding:8px;
     border:none;
     border-radius:8px;
-    outline:none;
 }
 
-textarea{
-    resize:none;
+textarea{resize:none;}
+
+.radio-group{
+    display:flex;
+    gap:20px;
 }
 
-.radio-group label,
-.checkbox-group label{
-    display:block;
-    margin-bottom:5px;
-    font-weight:normal;
+.checkbox-group{
+    margin-left:180px;
 }
 
 .back-btn{
     display:inline-block;
-    margin-top:30px;
-    padding:10px 25px;
+    margin-top:25px;
+    padding:8px 20px;
     background:#00ff88;
     color:black;
     text-decoration:none;
     border-radius:10px;
     font-weight:bold;
 }
-
-.back-btn:hover{
-    opacity:0.8;
-}
 </style>
 </head>
 
 <body>
-
 <div class="container">
 
 <h1>TÂM SỰ ĐÔI DÒNG VỀ BẢN THÂN</h1>
 
 <div class="avatar">
-    <img src="anhgiathinh.png" alt="Ảnh Gia Thịnh">
+<img src="anhgiathinh.png">
 </div>
 
 <div class="form-group">
-<label>Họ tên thành viên:</label>
+<label>Họ tên:</label>
 <input type="text" value="Trần Lư Gia Thịnh">
 </div>
 
@@ -116,26 +106,27 @@ textarea{
 <div class="form-group">
 <label>Giới tính:</label>
 <div class="radio-group">
-<label><input type="radio" name="gender" checked> Nam</label>
-<label><input type="radio" name="gender"> Nữ</label>
+<label><input type="radio" name="g" checked> Nam</label>
+<label><input type="radio" name="g"> Nữ</label>
 </div>
 </div>
 
 <div class="form-group">
-<label>Màu sắc yêu thích:</label>
+<label>Màu yêu thích:</label>
 <input type="text" value="Xanh dương">
 </div>
 
 <div class="form-group">
-<label>Môn thể thao yêu thích:</label>
-<div class="checkbox-group">
-<label><input type="checkbox" checked> Bóng đá</label>
-<label><input type="checkbox"> Cầu lông</label>
-<label><input type="checkbox"> Bóng chuyền</label>
-<label><input type="checkbox"> Ca hát</label>
-<label><input type="checkbox"> Nhảy - Múa</label>
-<label><input type="checkbox"> Khác</label>
+<label>Môn thể thao:</label>
 </div>
+
+<div class="checkbox-group">
+<label><input type="checkbox" checked> Bóng đá</label><br>
+<label><input type="checkbox"> Cầu lông</label><br>
+<label><input type="checkbox"> Bóng chuyền</label><br>
+<label><input type="checkbox"> Ca hát</label><br>
+<label><input type="checkbox"> Nhảy - Múa</label><br>
+<label><input type="checkbox"> Khác</label>
 </div>
 
 <div class="form-group">
@@ -145,12 +136,11 @@ textarea{
 
 <div class="form-group">
 <label>Phương châm sống:</label>
-<textarea rows="3">Sống để ăn</textarea>
+<textarea rows="2">Sống để ăn</textarea>
 </div>
 
 <a href="thanhvien.html" class="back-btn">← Quay lại</a>
 
 </div>
-
 </body>
 </html>
