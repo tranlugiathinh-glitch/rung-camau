@@ -18,10 +18,9 @@ body{
     color:white;
 }
 
-/* ===== HERO ===== */
 .hero{
-    background:url("rung5.png") no-repeat center center/cover;
-    height:70vh;
+    background:url("anh-rung-ca-mau.png") no-repeat center center/cover;
+    height:60vh;
     display:flex;
     justify-content:center;
     align-items:center;
@@ -43,16 +42,10 @@ body{
 }
 
 .hero h1{
-    font-size:50px;
+    font-size:45px;
     color:#00ff88;
 }
 
-.hero p{
-    margin-top:15px;
-    font-size:20px;
-}
-
-/* ===== CONTENT ===== */
 .section{
     padding:60px 20px;
 }
@@ -63,7 +56,6 @@ body{
     display:grid;
     grid-template-columns:1fr 1fr;
     gap:50px;
-    align-items:center;
 }
 
 .info h2{
@@ -76,11 +68,8 @@ body{
     line-height:1.6;
 }
 
-/* ===== MAP ===== */
 .map-container{
     position:relative;
-    width:100%;
-    max-width:450px;
 }
 
 .map-container img{
@@ -88,11 +77,11 @@ body{
     border-radius:15px;
 }
 
-/* Chấm radar */
+/* Chấm đỏ radar */
 .marker{
     position:absolute;
-    top:32%;      /* chỉnh vị trí */
-    left:28%;     /* chỉnh vị trí */
+    top:35%;
+    left:30%;
     width:18px;
     height:18px;
     background:red;
@@ -114,17 +103,10 @@ body{
 }
 
 @keyframes pulse{
-    0%{
-        transform:translate(-50%,-50%) scale(0.5);
-        opacity:1;
-    }
-    100%{
-        transform:translate(-50%,-50%) scale(1.5);
-        opacity:0;
-    }
+    0%{transform:translate(-50%,-50%) scale(0.5); opacity:1;}
+    100%{transform:translate(-50%,-50%) scale(1.5); opacity:0;}
 }
 
-/* ===== FOOTER BUTTON ===== */
 .back{
     text-align:center;
     margin-top:50px;
@@ -139,15 +121,9 @@ body{
     font-weight:bold;
 }
 
-.back a:hover{
-    background:white;
-}
-
-/* Responsive */
 @media(max-width:900px){
     .container{
         grid-template-columns:1fr;
-        text-align:center;
     }
 }
 </style>
@@ -155,39 +131,34 @@ body{
 
 <body>
 
-<!-- HERO -->
 <div class="hero">
     <div class="hero-content">
         <h1>🌳 Vườn quốc gia U Minh Hạ</h1>
-        <p>Hệ sinh thái rừng tràm đặc trưng của vùng đất cực Nam</p>
     </div>
 </div>
 
-<!-- CONTENT -->
 <div class="section">
-    <div class="container">
+<div class="container">
 
-        <!-- Thông tin -->
-        <div class="info">
-            <h2>Thông tin tổng quan</h2>
-            <p><b>Vị trí:</b> Huyện U Minh và Trần Văn Thời, tỉnh Cà Mau.</p>
-            <p><b>Diện tích:</b> Khoảng 8.527 ha.</p>
-            <p><b>Đặc điểm:</b> Rừng tràm trên đất than bùn, hệ sinh thái ngập nước độc đáo.</p>
-            <p><b>Đa dạng sinh học:</b> Có nhiều loài chim, thú và thực vật quý hiếm.</p>
-            <p><b>Vai trò:</b> Bảo tồn thiên nhiên, nghiên cứu khoa học và phát triển du lịch sinh thái.</p>
-        </div>
+<div class="info">
+    <h2>Thông tin tổng quan</h2>
+    <p><b>Vị trí:</b> Huyện U Minh và Trần Văn Thời, Cà Mau.</p>
+    <p><b>Diện tích:</b> Khoảng 8.527 ha.</p>
+    <p><b>Đặc điểm:</b> Rừng tràm trên đất than bùn.</p>
+    <p><b>Đa dạng sinh học:</b> Nhiều loài chim, thú và thực vật quý.</p>
+    <p><b>Vai trò:</b> Bảo tồn và phát triển du lịch sinh thái.</p>
+</div>
 
-        <!-- Bản đồ -->
-        <div class="map-container">
-            <img src="bando.png" alt="Bản đồ Cà Mau">
-            <div class="marker"></div>
-        </div>
+<div class="map-container">
+    <img src="anh-rung-ca-mau.png" alt="Bản đồ minh họa">
+    <div class="marker"></div>
+</div>
 
-    </div>
+</div>
 
-    <div class="back">
-        <a href="5khu.html">⬅ Quay lại 5 khu rừng</a>
-    </div>
+<div class="back">
+    <a href="rung.html">⬅ Quay lại 5 khu rừng</a>
+</div>
 
 </div>
 
