@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Tâm sự đôi dòng - Nông Vũ Lam Vy</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial;
+}
+
+body{
+    background:linear-gradient(to right,#0f1f14,#1c3a28);
+    color:white;
+    padding:40px;
+}
+
+.container{
+    max-width:700px;
+    margin:auto;
+}
+
+h1{
+    text-align:center;
+    color:#00ff88;
+    margin-bottom:20px;
+}
+
+.avatar{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    overflow:hidden;
+    margin:0 auto 40px auto;
+    box-shadow:0 0 30px rgba(0,255,136,0.6);
+    border:4px solid #00ff88;
+}
+
+.avatar img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.form-group{
+    display:flex;
+    align-items:center;
+    margin-bottom:15px;
+}
+
+.form-group label{
+    width:180px;
+    font-weight:bold;
+}
+
+input[type="text"],
+input[type="date"],
+textarea{
+    flex:1;
+    padding:8px;
+    border:none;
+    border-radius:8px;
+}
+
+textarea{
+    resize:none;
+}
+
+.radio-group{
+    display:flex;
+    gap:20px;
+}
+
+.checkbox-group{
+    margin-left:180px;
+    margin-bottom:15px;
+}
+
+.back-btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:8px 20px;
+    background:#00ff88;
+    color:black;
+    text-decoration:none;
+    border-radius:10px;
+    font-weight:bold;
+}
+
+.back-btn:hover{
+    opacity:0.85;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>TÂM SỰ ĐÔI DÒNG VỀ BẢN THÂN</h1>
+
+<div class="avatar">
+    <img src="anhlamvy.png" alt="Ảnh Nông Vũ Lam Vy">
+</div>
+
+<div class="form-group">
+<label>Họ tên:</label>
+<input type="text" value="Nông Vũ Lam Vy">
+</div>
+
+<div class="form-group">
+<label>Ngày sinh:</label>
+<input type="date" value="2008-12-09">
+</div>
+
+<div class="form-group">
+<label>Giới tính:</label>
+<div class="radio-group">
+<label><input type="radio" name="g"> Nam</label>
+<label><input type="radio" name="g" checked> Nữ</label>
+</div>
+</div>
+
+<div class="form-group">
+<label>Màu yêu thích:</label>
+<input type="text" value="Xanh dương">
+</div>
+
+<div class="form-group">
+<label>Môn thể thao:</label>
+</div>
+
+<div class="checkbox-group">
+<label><input type="checkbox"> Bóng đá</label><br>
+<label><input type="checkbox" checked> Cầu lông</label><br>
+<label><input type="checkbox"> Bóng chuyền</label><br>
+<label><input type="checkbox"> Ca hát</label><br>
+<label><input type="checkbox"> Nhảy - Múa</label><br>
+<label><input type="checkbox"> Khác</label>
+</div>
+
+<div class="form-group">
+<label>Môn học tự tin:</label>
+<input type="text" value="Tiếng anh">
+</div>
+
+<div class="form-group">
+<label>Phương châm sống:</label>
+<textarea rows="2">Thất bại chưa bao giờ là kết thúc</textarea>
+</div>
+
+<a href="thanhvien.html" class="back-btn">← Quay lại</a>
+
+</div>
+
+</body>
+</html>
