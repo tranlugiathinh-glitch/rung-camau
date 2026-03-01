@@ -6,6 +6,37 @@
 <title>5 Khu Rừng Cà Mau</title>
 
 <style>
+.navbar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 50px;
+    background:rgba(0,0,0,0.6);
+    backdrop-filter:blur(5px);
+    z-index:1000;
+}
+
+.logo{
+    color:white;
+    font-weight:bold;
+    font-size:20px;
+}
+
+.navbar nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    font-weight:500;
+    transition:0.3s;
+}
+
+.navbar nav a:hover{
+    color:#00ff88;
+}
 *{
     margin:0;
     padding:0;
@@ -100,6 +131,14 @@ h1{
 </head>
 
 <body>
+<header class="navbar">
+    <div class="logo">RỪNG CÀ MAU</div>
+    <nav>
+        <a href="index.html">Trang Chủ</a>
+        <a href="rung.html">5 khu rừng</a>
+        <a href="thanhvien.html">Thành Viên</a>
+    </nav>
+</header>
 
 <div class="overlay">
 
@@ -148,4 +187,5 @@ h1{
 
 </body>
 </html>
+
 
