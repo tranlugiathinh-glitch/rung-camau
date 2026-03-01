@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Rừng Cà Mau</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    height:100vh;
+}
+
+.hero{
+    position:relative;
+    height:100vh;
+    background-image: url("ảnh rừng cà mau.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.6);
+}
+
+
+header{
+    position:absolute;
+    top:0;
+    width:100%;
+    padding:20px 60px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:10;
+}
+
+.logo{
+    font-size:22px;
+    font-weight:bold;
+    color:white;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    margin-left:25px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#4caf50;
+}
+
+
+.hero-content{
+    position:absolute;
+    top:50%;
+    left:8%;
+    transform:translateY(-50%);
+    color:white;
+    max-width:600px;
+    z-index:10;
+}
+
+.hero-content h1{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:18px;
+    line-height:1.6;
+}
+
+
+.info-box{
+    position:absolute;
+    top:50%;
+    right:8%;
+    transform:translateY(-50%);
+    background:rgba(0,0,0,0.65);
+    padding:30px;
+    width:350px;
+    border-radius:20px;
+    color:white;
+    z-index:10;
+}
+
+.info-box h3{
+    margin-bottom:15px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:10px 20px;
+    background:#4caf50;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#2e7d32;
+}
+</style>
+
+</head>
+<body>
+
+<div class="hero">
+
+<div class="overlay"></div>
+
+<header>
+<div class="logo">RỪNG CÀ MAU</div>
+
+<nav>
+    <a href="trangchu.html">Trang Chủ</a>
+    <a href="rung.html">5 khu rừng</a>
+    <a href="thanhvien.html">Thành Viên</a>
+</nav>
+</header>
+
+<div class="hero-content">
+    <h1>Khám Phá Rừng Cà Mau</h1>
+    <p>Hệ sinh thái rừng ngập mặn lớn nhất Việt Nam – nơi giao thoa giữa đất, nước và thiên nhiên hoang sơ.</p>
+</div>
+
+<div class="info-box">
+    <h3>Thiên nhiên bền vững</h3>
+    <p>Các khu rừng Cà Mau đóng vai trò quan trọng trong bảo vệ môi trường, chống xói lở và bảo tồn đa dạng sinh học.</p>
+    <a href="rung.html" class="btn">Xem 5 khu rừng</a>
+</div>
+
+</div>
+
+</body>
+</html>
