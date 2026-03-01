@@ -14,19 +14,17 @@
 }
 
 body{
-    background: url("anh-rung-ca-mau.png") no-repeat center center/cover;
+    background: url("rung5.png") no-repeat center center/cover;
     background-attachment: fixed;
     color:white;
 }
 
-/* Lớp phủ tối */
 .overlay{
     background: rgba(0,0,0,0.6);
     min-height:100vh;
     padding:60px 20px;
 }
 
-/* Tiêu đề */
 h1{
     text-align:center;
     font-size:50px;
@@ -41,22 +39,18 @@ h1{
     color:#d4ffd4;
 }
 
-/* Card container */
 .container{
     display:grid;
     grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
     gap:30px;
 }
 
-/* Card */
 .card{
     background: rgba(255,255,255,0.1);
     backdrop-filter: blur(10px);
     padding:25px;
     border-radius:20px;
     transition:0.4s;
-    position:relative;
-    overflow:hidden;
     transform:translateY(50px);
     opacity:0;
     animation: fadeUp 1s forwards;
@@ -69,7 +63,7 @@ h1{
 .card:nth-child(5){ animation-delay:1.5s;}
 
 .card:hover{
-    transform: scale(1.05) rotateX(5deg);
+    transform: scale(1.05);
     box-shadow:0 0 30px #00ff88;
 }
 
@@ -82,6 +76,10 @@ h1{
     font-size:15px;
     line-height:1.5;
     margin-bottom:15px;
+}
+
+.card a{
+    text-decoration:none;
 }
 
 .card button{
@@ -98,7 +96,6 @@ h1{
     background:white;
 }
 
-/* Nút quay lại */
 .footer-btn{
     text-align:center;
     margin-top:60px;
@@ -118,7 +115,6 @@ h1{
     background:white;
 }
 
-/* Animations */
 @keyframes fadeDown{
     from{opacity:0; transform:translateY(-50px);}
     to{opacity:1; transform:translateY(0);}
@@ -127,7 +123,6 @@ h1{
 @keyframes fadeUp{
     to{opacity:1; transform:translateY(0);}
 }
-
 </style>
 </head>
 
@@ -143,31 +138,31 @@ h1{
 <div class="card">
     <h2>Vườn quốc gia U Minh Hạ</h2>
     <p>Hệ sinh thái rừng tràm trên đất than bùn, đa dạng sinh học cao và có giá trị nghiên cứu lớn.</p>
-    <button>Xem chi tiết</button>
+    <a href="uminh.html"><button>Xem chi tiết</button></a>
 </div>
 
 <div class="card">
     <h2>Vườn quốc gia Mũi Cà Mau</h2>
     <p>Khu dự trữ sinh quyển thế giới với hệ sinh thái rừng ngập mặn đặc trưng.</p>
-    <button>Xem chi tiết</button>
+    <a href="muicamau.html"><button>Xem chi tiết</button></a>
 </div>
 
 <div class="card">
     <h2>Khu sinh thái rừng đước Năm Căn</h2>
     <p>Rừng đước ven biển rộng lớn, đóng vai trò quan trọng trong bảo vệ bờ biển.</p>
-    <button>Xem chi tiết</button>
+    <a href="namcan.html"><button>Xem chi tiết</button></a>
 </div>
 
 <div class="card">
     <h2>Rừng phòng hộ Kiến Vàng</h2>
     <p>Rừng phòng hộ giúp chống xói lở và bảo vệ môi trường sinh thái địa phương.</p>
-    <button>Xem chi tiết</button>
+    <a href="kienvang.html"><button>Xem chi tiết</button></a>
 </div>
 
 <div class="card">
     <h2>Rừng ngập mặn Đầm Dơi</h2>
     <p>Hệ sinh thái ngập mặn đa dạng với nhiều loài động thực vật quý hiếm.</p>
-    <button>Xem chi tiết</button>
+    <a href="damdoi.html"><button>Xem chi tiết</button></a>
 </div>
 
 </div>
