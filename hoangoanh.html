@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Tâm sự đôi dòng</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial;
+}
+
+body{
+    background:linear-gradient(to right,#0f1f14,#1c3a28);
+    color:white;
+    padding:40px;
+}
+
+.container{
+    max-width:1000px;
+    margin:auto;
+}
+
+h1{
+    text-align:center;
+    color:#00ff88;
+    margin-bottom:20px;
+}
+
+.avatar{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    overflow:hidden;
+    margin:0 auto 40px auto;
+    box-shadow:0 0 30px rgba(0,255,136,0.6);
+    border:4px solid #00ff88;
+}
+
+.avatar img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.form-group{
+    margin-bottom:20px;
+}
+
+label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:bold;
+}
+
+input[type="text"],
+input[type="date"],
+textarea{
+    width:100%;
+    padding:10px;
+    border:none;
+    border-radius:8px;
+    outline:none;
+}
+
+textarea{
+    resize:none;
+}
+
+.radio-group label,
+.checkbox-group label{
+    display:block;
+    margin-bottom:5px;
+    font-weight:normal;
+}
+
+.back-btn{
+    display:inline-block;
+    margin-top:30px;
+    padding:10px 25px;
+    background:#00ff88;
+    color:black;
+    text-decoration:none;
+    border-radius:10px;
+    font-weight:bold;
+}
+
+.back-btn:hover{
+    opacity:0.8;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>TÂM SỰ ĐÔI DÒNG VỀ BẢN THÂN</h1>
+
+<div class="avatar">
+    <img src="anhoanh.png" alt="Ảnh Ngô Hoàng Oanh">
+</div>
+
+<div class="form-group">
+<label>Họ tên thành viên:</label>
+<input type="text" value="Ngô Hoàng Oanh">
+</div>
+
+<div class="form-group">
+<label>Ngày sinh:</label>
+<input type="date" value="2008-09-05">
+</div>
+
+<div class="form-group">
+<label>Giới tính:</label>
+<div class="radio-group">
+<label><input type="radio" name="gender"> Nam</label>
+<label><input type="radio" name="gender" checked> Nữ</label>
+</div>
+</div>
+
+<div class="form-group">
+<label>Màu sắc yêu thích:</label>
+<input type="text">
+</div>
+
+<div class="form-group">
+<label>Môn thể thao yêu thích:</label>
+<div class="checkbox-group">
+<label><input type="checkbox"> Bóng đá</label>
+<label><input type="checkbox"> Cầu lông</label>
+<label><input type="checkbox"> Bóng chuyền</label>
+<label><input type="checkbox"> Ca hát</label>
+<label><input type="checkbox" checked> Nhảy - Múa</label>
+<label><input type="checkbox"> Khác</label>
+</div>
+</div>
+
+<div class="form-group">
+<label>Môn học tự tin:</label>
+<input type="text" value="Toán">
+</div>
+
+<div class="form-group">
+<label>Phương châm sống:</label>
+<textarea rows="3">Học , học nữa , học mãi</textarea>
+</div>
+
+<a href="thanhvien.html" class="back-btn">← Quay lại</a>
+
+</div>
+
+</body>
+</html>
