@@ -19,7 +19,7 @@ body{
 }
 
 .container{
-    max-width:1000px;
+    max-width:700px;
     margin:auto;
 }
 
@@ -46,40 +46,43 @@ h1{
 }
 
 .form-group{
-    margin-bottom:20px;
+    display:flex;
+    align-items:center;
+    margin-bottom:15px;
 }
 
-label{
-    display:block;
-    margin-bottom:8px;
+.form-group label{
+    width:180px;
     font-weight:bold;
 }
 
 input[type="text"],
 input[type="date"],
 textarea{
-    width:100%;
-    padding:10px;
+    flex:1;
+    padding:8px;
     border:none;
     border-radius:8px;
-    outline:none;
 }
 
 textarea{
     resize:none;
 }
 
-.radio-group label,
-.checkbox-group label{
-    display:block;
-    margin-bottom:5px;
-    font-weight:normal;
+.radio-group{
+    display:flex;
+    gap:20px;
+}
+
+.checkbox-group{
+    margin-left:180px;
+    margin-bottom:15px;
 }
 
 .back-btn{
     display:inline-block;
-    margin-top:30px;
-    padding:10px 25px;
+    margin-top:25px;
+    padding:8px 20px;
     background:#00ff88;
     color:black;
     text-decoration:none;
@@ -88,7 +91,7 @@ textarea{
 }
 
 .back-btn:hover{
-    opacity:0.8;
+    opacity:0.85;
 }
 </style>
 </head>
@@ -100,11 +103,11 @@ textarea{
 <h1>TÂM SỰ ĐÔI DÒNG VỀ BẢN THÂN</h1>
 
 <div class="avatar">
-    <img src="anhhoangoanh.png" alt="Ảnh Ngô Hoàng Oanh">
+    <img src="anhoanh.png" alt="Ảnh Ngô Hoàng Oanh">
 </div>
 
 <div class="form-group">
-<label>Họ tên thành viên:</label>
+<label>Họ tên:</label>
 <input type="text" value="Ngô Hoàng Oanh">
 </div>
 
@@ -116,26 +119,27 @@ textarea{
 <div class="form-group">
 <label>Giới tính:</label>
 <div class="radio-group">
-<label><input type="radio" name="gender"> Nam</label>
-<label><input type="radio" name="gender" checked> Nữ</label>
+<label><input type="radio" name="g"> Nam</label>
+<label><input type="radio" name="g" checked> Nữ</label>
 </div>
 </div>
 
 <div class="form-group">
-<label>Màu sắc yêu thích:</label>
-<input type="text" value="Xanh biển">
+<label>Màu yêu thích:</label>
+<input type="text">
 </div>
 
 <div class="form-group">
-<label>Môn thể thao yêu thích:</label>
+<label>Môn thể thao:</label>
+</div>
+
 <div class="checkbox-group">
-<label><input type="checkbox"> Bóng đá</label>
-<label><input type="checkbox"> Cầu lông</label>
-<label><input type="checkbox"> Bóng chuyền</label>
-<label><input type="checkbox"> Ca hát</label>
-<label><input type="checkbox" checked> Nhảy - Múa</label>
+<label><input type="checkbox"> Bóng đá</label><br>
+<label><input type="checkbox"> Cầu lông</label><br>
+<label><input type="checkbox"> Bóng chuyền</label><br>
+<label><input type="checkbox"> Ca hát</label><br>
+<label><input type="checkbox" checked> Nhảy - Múa</label><br>
 <label><input type="checkbox"> Khác</label>
-</div>
 </div>
 
 <div class="form-group">
@@ -145,7 +149,7 @@ textarea{
 
 <div class="form-group">
 <label>Phương châm sống:</label>
-<textarea rows="3">Học , học nữa , học mãi</textarea>
+<textarea rows="2">Học , học nữa , học mãi</textarea>
 </div>
 
 <a href="thanhvien.html" class="back-btn">← Quay lại</a>
@@ -153,7 +157,4 @@ textarea{
 </div>
 
 </body>
-
 </html>
-
-
