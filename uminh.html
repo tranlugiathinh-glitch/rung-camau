@@ -2,141 +2,155 @@
 <html lang="vi">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vườn quốc gia U Minh Hạ</title>
+<title>Vườn Quốc Gia U Minh Hạ</title>
 
 <style>
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Arial, sans-serif;
+    font-family:Arial;
 }
 
 body{
-    background:#0f1f14;
+    background:linear-gradient(to right,#0f1f14,#1c3a28);
     color:white;
-}
-
-.hero{
-    background:url("anh-rung-ca-mau.png") no-repeat center center/cover;
-    height:60vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    position:relative;
-}
-
-.hero::after{
-    content:"";
-    position:absolute;
-    width:100%;
-    height:100%;
-    background:rgba(0,0,0,0.6);
-}
-
-.hero-content{
-    position:relative;
-    z-index:2;
-}
-
-.hero h1{
-    font-size:45px;
-    color:#00ff88;
-}
-
-.section{
-    padding:60px 20px;
+    padding:40px;
 }
 
 .container{
-    max-width:1100px;
+    max-width:1200px;
     margin:auto;
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:50px;
 }
 
-.info h2{
+h1{
+    text-align:center;
     color:#00ff88;
-    margin-bottom:20px;
+    margin-bottom:30px;
 }
 
-.info p{
-    margin-bottom:15px;
+.top-section{
+    display:flex;
+    gap:40px;
+    align-items:flex-start;
+}
+
+.content{
+    flex:2;
     line-height:1.6;
 }
 
-.map-container{
-    position:relative;
+.map{
+    flex:1;
 }
 
-.map-container img{
+.map img{
     width:100%;
     border-radius:15px;
+    box-shadow:0 0 20px rgba(0,255,136,0.5);
 }
 
-@keyframes pulse{
-    0%{transform:translate(-50%,-50%) scale(0.5); opacity:1;}
-    100%{transform:translate(-50%,-50%) scale(1.5); opacity:0;}
-}
-
-.back{
-    text-align:center;
-    margin-top:50px;
-}
-
-.back a{
-    text-decoration:none;
-    padding:12px 25px;
-    border-radius:30px;
-    background:#00ff88;
-    color:black;
+.section-title{
+    margin-top:20px;
+    color:#00ff88;
     font-weight:bold;
 }
 
-@media(max-width:900px){
-    .container{
-        grid-template-columns:1fr;
-    }
+.gallery{
+    margin-top:40px;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
 }
+
+.gallery img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:15px;
+    box-shadow:0 0 15px rgba(0,255,136,0.4);
+}
+
 </style>
 </head>
 
 <body>
 
-<div class="hero">
-    <div class="hero-content">
-        <h1>🌳 Vườn quốc gia U Minh Hạ</h1>
-    </div>
-</div>
-
-<div class="section">
 <div class="container">
 
-<div class="info">
-    <h2>Thông tin tổng quan</h2>
-    <p><b>Vị trí:</b> Huyện U Minh và Trần Văn Thời, Cà Mau.</p>
-    <p><b>Diện tích:</b> Khoảng 8.527 ha.</p>
-    <p><b>Đặc điểm:</b> Rừng tràm trên đất than bùn.</p>
-    <p><b>Đa dạng sinh học:</b> Nhiều loài chim, thú và thực vật quý.</p>
-    <p><b>Vai trò:</b> Bảo tồn và phát triển du lịch sinh thái.</p>
+<h1>VƯỜN QUỐC GIA U MINH HẠ</h1>
+
+<div class="top-section">
+
+<div class="content">
+
+<p><strong>Tên đầy đủ:</strong> Vườn quốc gia U Minh Hạ.</p>
+<p><strong>Vị trí:</strong> Nằm ở tỉnh Cà Mau, Việt Nam, thuộc huyện U Minh và huyện Trần Văn Thời.</p>
+<p><strong>Năm thành lập:</strong> Quyết định 112/QĐ-TTg ngày 20/01/2006.</p>
+
+<p class="section-title">Diện tích</p>
+<p>• Tổng diện tích: 85,3 km²</p>
+
+<p class="section-title">Loại rừng & địa hình</p>
+<p>• Rừng tràm trên đất than bùn ngập nước.</p>
+<p>• Địa hình đất than bùn và đất sét ngập nước, kênh rạch chằng chịt.</p>
+
+<p class="section-title">Khí hậu</p>
+<p>• Nhiệt đới gió mùa Nam Bộ, mùa mưa (5–10), mùa khô (11–4).</p>
+<p>• Lượng mưa lớn, độ ẩm cao.</p>
+
+<p class="section-title">Hệ sinh thái</p>
+<p>• Rừng tràm Melaleuca trên đất than bùn.</p>
+<p>• Khu đầm lầy đặc trưng Đồng bằng sông Cửu Long.</p>
+
+<p class="section-title">Cảnh quan nổi bật</p>
+<p>• Rừng tràm xanh bạt ngàn, kênh rạch tự nhiên.</p>
+
+<p class="section-title">Thực vật</p>
+<p>• Tràm (loài chính), cây bụi, dây leo, cỏ nước.</p>
+
+<p class="section-title">Động vật</p>
+<p>• 23 loài động vật có vú.</p>
+<p>• 91 loài chim.</p>
+<p>• Nhiều loài bò sát, lưỡng cư.</p>
+
+<p class="section-title">Loài quý hiếm</p>
+<p>• Cá sấu, rái cá, mèo cá, tê tê Java.</p>
+
+<p class="section-title">Giá trị môi trường</p>
+<p>• Điều hòa khí hậu, giữ nước, lưu trữ carbon.</p>
+<p>• Giảm xói lở và ngập mặn.</p>
+
+<p class="section-title">Du lịch sinh thái</p>
+<p>• Tham quan rừng bằng thuyền.</p>
+
+<p class="section-title">Nghiên cứu khoa học</p>
+<p>• Nghiên cứu đa dạng sinh học và hệ sinh thái than bùn.</p>
+
+<p class="section-title">Mối đe dọa</p>
+<p>• Biến đổi khí hậu, cháy rừng, xâm nhập mặn.</p>
+
+<p class="section-title">Bảo tồn</p>
+<p>• Phục hồi đất than bùn, quản lý rừng, giáo dục cộng đồng.</p>
+
 </div>
 
-<div class="map-container">
-    <img src="anh-rung-ca-mau.png" alt="Bản đồ minh họa">
+<div class="map">
+    <img src="bandouminh.png" alt="Bản đồ U Minh Hạ">
 </div>
 
 </div>
 
-<div class="back">
-    <a href="rung.html">⬅ Quay lại </a>
+<!-- Khu vực 4 hình ảnh -->
+
+<div class="gallery">
+    <img src="hinh1uminh.jpg" alt="">
+    <img src="hinh2uminh.jpg" alt="">
+    <img src="hinh3uminh.jpg" alt="">
+    <img src="hinh4uminh.jpg" alt="">
 </div>
 
 </div>
 
 </body>
 </html>
-
-
