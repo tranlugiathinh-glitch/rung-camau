@@ -2,54 +2,137 @@
 <html lang="vi">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Rừng phòng hộ Kiến Vàng</title>
+
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Arial;}
-body{background:#0f1f14;color:white;}
-.hero{background:url("anh-rung-ca-mau.png") no-repeat center center/cover;height:60vh;display:flex;justify-content:center;align-items:center;text-align:center;position:relative;}
-.hero::after{content:"";position:absolute;width:100%;height:100%;background:rgba(0,0,0,0.6);}
-.hero-content{position:relative;z-index:2;}
-.hero h1{font-size:45px;color:#00ff88;}
-.section{padding:60px 20px;}
-.container{max-width:1100px;margin:auto;display:grid;grid-template-columns:1fr 1fr;gap:50px;}
-.info h2{color:#00ff88;margin-bottom:20px;}
-.info p{margin-bottom:15px;line-height:1.6;}
-.map-container img{width:100%;border-radius:15px;}
-.back{text-align:center;margin-top:50px;}
-.back a{text-decoration:none;padding:12px 25px;border-radius:30px;background:#00ff88;color:black;font-weight:bold;}
-@media(max-width:900px){.container{grid-template-columns:1fr;}}
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #001a0f, #00331f);
+    color:white;
+}
+
+/* Nút quay lại */
+.back-btn{
+    position: fixed;
+    top:20px;
+    left:20px;
+    background:#00ff88;
+    color:black;
+    padding:8px 15px;
+    border-radius:20px;
+    text-decoration:none;
+    font-weight:bold;
+    box-shadow:0 0 10px #00ff88;
+    transition:0.3s;
+}
+.back-btn:hover{
+    background:white;
+    color:#009966;
+}
+
+/* Tiêu đề */
+h1{
+    text-align:center;
+    color:#00ff99;
+    margin-top:60px;
+}
+
+/* Layout */
+.container{
+    display:flex;
+    justify-content:space-between;
+    padding:40px;
+    gap:40px;
+}
+
+.content{
+    width:60%;
+    line-height:1.7;
+}
+
+.content b{
+    color:#00ff99;
+}
+
+.map{
+    width:35%;
+    text-align:center;
+}
+
+.map img{
+    width:100%;
+    border-radius:15px;
+    box-shadow:0 0 15px #00ff99;
+}
+
+/* Gallery */
+.gallery{
+    margin:40px;
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:20px;
+}
+
+.gallery img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+    border-radius:15px;
+    box-shadow:0 0 10px #00ff88;
+    transition:0.3s;
+}
+
+.gallery img:hover{
+    transform:scale(1.05);
+}
 </style>
 </head>
 
 <body>
 
-<div class="hero">
-<div class="hero-content">
-<h1>🌿 Rừng phòng hộ Kiến Vàng</h1>
-</div>
-</div>
+<a href="javascript:history.back()" class="back-btn">← Quay lại</a>
 
-<div class="section">
+<h1>RỪNG PHÒNG HỘ KIẾN VÀNG</h1>
+
 <div class="container">
 
-<div class="info">
-<h2>Thông tin tổng quan</h2>
-<p><b>Vị trí:</b> Cà Mau.</p>
-<p><b>Đặc điểm:</b> Rừng phòng hộ ven biển.</p>
-<p><b>Vai trò:</b> Bảo vệ môi trường và giảm thiên tai.</p>
+<div class="content">
+
+<b>Tên:</b> Rừng phòng hộ Kiến Vàng (thuộc hệ thống rừng phòng hộ ven biển Ngọc Hiển).<br>
+<b>Vị trí:</b> Huyện Ngọc Hiển, tỉnh Cà Mau.<br>
+<b>Diện tích:</b> Toàn tuyến rừng phòng hộ ven biển Ngọc Hiển khoảng 17.000–20.000 ha.<br>
+<b>Năm quy hoạch:</b> Đưa vào quy hoạch bảo vệ từ những năm 1990.<br>
+<b>Loại rừng:</b> Rừng ngập mặn ven biển, rừng đước chiếm khoảng 70–80% diện tích.<br>
+<b>Địa hình:</b> Ven biển, bãi bồi phù sa; cao trung bình 0,5–1,2 m so với mực nước biển.<br>
+<b>Khí hậu:</b> Nhiệt độ trung bình 26–27°C; lượng mưa 2.300–2.500 mm/năm.<br>
+<b>Hệ sinh thái:</b> Rừng ngập mặn nhiệt đới, năng suất sinh học cao.<br><br>
+
+<b>Cây đặc trưng:</b> Đước (cao 15–25 m), mắm, vẹt, bần.<br>
+<b>Động vật:</b> Tôm, cua, cá, sò; chim nước như cò, vạc.<br>
+<b>Loài quý hiếm:</b> Có một số loài chim di cư và thủy sinh có giá trị bảo tồn.<br><br>
+
+<b>Chống xói lở:</b> Đai rừng 100 m có thể giảm 50–70% lực sóng.<br>
+<b>Điều hòa khí hậu:</b> 1 ha rừng hấp thụ khoảng 100–200 tấn CO₂/chu kỳ.<br><br>
+
+<b>Mối đe dọa:</b> Cà Mau có hơn 100 km bờ biển sạt lở, mất 10–25 m/năm ở một số đoạn.<br>
+<b>Biện pháp bảo tồn:</b> Trồng rừng hằng năm; mô hình tôm–rừng giữ tối thiểu 50% diện tích rừng.<br>
+<b>Giá trị:</b> Bảo vệ đất, hỗ trợ nuôi thủy sản, nghiên cứu biến đổi khí hậu và phát triển du lịch sinh thái.
+
 </div>
 
-<div class="map-container">
-<img src="anh-rung-ca-mau.png">
+<div class="map">
+    <img src="bandokienvang.png" alt="Bản đồ Kiến Vàng">
 </div>
 
 </div>
 
-<div class="back">
-<a href="rung.html">⬅ Quay lại</a>
+<div class="gallery">
+    <img src="kienvang1.png">
+    <img src="kienvang2.png">
+    <img src="kienvang3.png">
+    <img src="kienvang4.png">
 </div>
 
-</div>
 </body>
 </html>
